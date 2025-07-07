@@ -219,3 +219,8 @@ All APIs are secured and role-protected
 System meets NFRs for performance and security
 
 
+## 25-3 Workflow of PH Tour Management System
+![alt text](image-9.png)
+Workflow of the PH Tour Management System 
+
+https://gitmind.com/app/docs/mzkbj5o2
