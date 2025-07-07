@@ -372,4 +372,10 @@ Tour → TourType: A tour belongs to one type.
 
 Booking → Payment: A booking has one payment.
 
+## 25-5 How to Make ER Diagram for PH Tour Management System
 
+![alt text](image-10.png)
+![alt text](image-11.png)
+ER Diagram for PH Tour Management System
+
+https://drive.google.com/file/d/1ASphx7B6gHIKPiiiNf3AB_ZTvdYRBsQz/view?usp=sharing
