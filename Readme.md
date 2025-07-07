@@ -219,3 +219,163 @@ All APIs are secured and role-protected
 System meets NFRs for performance and security
 
 
+## 25-3 Workflow of PH Tour Management System
+![alt text](image-9.png)
+Workflow of the PH Tour Management System 
+
+https://gitmind.com/app/docs/mzkbj5o2
+
+## 25-4 Modelling Data for PH Tour Management System
+PH Tour Management System Data Modelling
+
+https://docs.google.com/document/d/1NSELQ7_jUx4xLGchef4HT3_9YqDWrdzUUGMZWmD2lY0/edit?tab=t.0
+
+Entities and Their Attributes:
+User:
+
+
+name: String
+
+
+email: String (unique)
+
+
+password: String
+
+
+role: String (e.g., Admin, User)
+
+
+phone: String
+
+
+picture: String
+
+
+address: String
+
+
+isDeleted: Boolean
+
+
+isActive: String (e.g., Active, Inactive)
+
+
+isVerified: Boolean
+
+
+auths: Array of auth providers (e.g., Google, Facebook)
+
+
+Tour:
+
+
+slug: String (unique)
+
+
+title: String
+
+
+description: String
+
+
+images: Array of Strings
+
+
+location: String
+
+
+costFrom: Number
+
+
+startDate: Date
+
+
+endDate: Date
+
+
+tourType: ObjectId (references TourType)
+
+
+included: Array of Strings (e.g., Meals, Transport)
+
+
+excluded: Array of Strings (e.g., Insurance)
+
+
+amenities: Array of Strings
+
+
+tourPlan: Array of Strings (daily itinerary)
+
+
+TourType:
+
+
+name: String (e.g., Adventure, Leisure)
+
+
+Booking:
+
+
+user: ObjectId (references User)
+
+
+tour: ObjectId (references Tour)
+
+
+guestCount: Number
+
+
+phone: String
+
+
+address: String
+
+
+status: String (e.g., Pending, Completed)
+
+
+payment: ObjectId (references Payment)
+
+
+Payment:
+
+
+booking: ObjectId (references Booking)
+
+
+transactionId: String (unique)
+
+
+status: String (e.g., Paid, Unpaid, Refunded)
+
+
+amount: Number
+
+
+paymentGatewayData: Any
+
+
+invoiceUrl: String
+
+
+Relationships:
+User → Booking: A user can make multiple bookings.
+
+
+Tour → Booking: A tour can have many bookings.
+
+
+Tour → TourType: A tour belongs to one type.
+
+
+Booking → Payment: A booking has one payment.
+
+## 25-5 How to Make ER Diagram for PH Tour Management System
+
+![alt text](image-10.png)
+![alt text](image-11.png)
+ER Diagram for PH Tour Management System
+
+https://drive.google.com/file/d/1ASphx7B6gHIKPiiiNf3AB_ZTvdYRBsQz/view?usp=sharing
