@@ -379,3 +379,8 @@ Booking → Payment: A booking has one payment.
 ER Diagram for PH Tour Management System
 
 https://drive.google.com/file/d/1ASphx7B6gHIKPiiiNf3AB_ZTvdYRBsQz/view?usp=sharing
+
+## 25-6 Create API Endpoints for PH Tour Management System
+PH Tour Management System API Endpoints
+
+https://docs.google.com/document/d/1HysoioRCpSsGpSz8JQZRGii9GNkpdx0pEX-zHP2p334/edit?tab=t.0
